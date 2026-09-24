@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Room & Student Allocations</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .table-container {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+        th, td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: var(--primary-pink);
+            color: white;
+        }
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+        .badge {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">🏛️ MUST Hostel Portal - Admin Dashboard</div>
+        <nav>
+            <a href="index.html">Log Out</a>
+        </nav>
+    </header>
+
+    <div class="container" style="max-width: 950px;">
+        <h2>Hostel Allocation Master Registry</h2>
+        <p class="subtitle">Overview of available rooms, student details, and current placements around Kihumuro campus.</p>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hostel Name</th>
+                        <th>Room No.</th>
+                        <th>Student Name</th>
+                        <th>Student ID</th>
+                        <th>Course</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kihumuro Gents Flat</td>
+                        <td>Block A - Room 108</td>
+                        <td>Waiswa Edrick Kizito</td>
+                        <td>2025/BIT/001/P</td>
+                        <td>BIT (Year 2)</td>
+                        <td><span class="badge">Occupied</span></td>
+                    </tr>
+                    <tr>
+                        <td>Kihumuro Gents Flat</td>
+                        <td>Block A - Room 109</td>
+                        <td>Byaruhanga Ronald</td>
+                        <td>2025/BCS/014/P</td>
+                        <td>BCS (Year 2)</td>
+                        <td><span class="badge">Occupied</span></td>
+                    </tr>
+                    <tr>
+                        <td>Mile Four - Maama Brenda</td>
+                        <td>Room 04</td>
+                        <td>Namubiru Aisha</td>
+                        <td>2025/BSE/022/P</td>
+                        <td>BSE (Year 1)</td>
+                        <td><span class="badge">Occupied</span></td>
+                    </tr>
+                    <tr>
+                        <td>Mile Three - Mirrors Hostel</td>
+                        <td>Room 12</td>
+                        <td>-- Unassigned --</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td><span style="color: #c2185b; font-weight: 600;">Available</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="margin-top: 30px; text-align: center;">
+            <a href="index.html" class="btn" style="display: inline-block; width: auto; padding: 10px 25px;">Back to Home</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Mbarara University of Science and Technology - Agile Group A</p>
+    </footer>
+
+</body>
+</html>
