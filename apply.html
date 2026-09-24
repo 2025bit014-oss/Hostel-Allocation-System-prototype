@@ -17,17 +17,30 @@
 
     <div class="container">
         <h2>Hostel Accommodation Application</h2>
-        <p class="subtitle">Fill out your academic and preference details for automated room matching.</p>
+        <p class="subtitle">Fill out your academic and preference details for automated room matching at Kihumuro Campus.</p>
         
         <form action="success.html" method="GET">
             <div class="form-group">
                 <label for="fullName">Full Name</label>
-                <input type="text" id="fullName" placeholder="Waiswa Edrick Kizito" required>
+                <input type="text" id="fullName" placeholder="Mihigo Vallerian Ivan" required>
+            </div>
+
+            <div class="form-group">
+                <label for="studentId">Student ID Number</label>
+                <input type="text" id="studentId" placeholder="23/U/MSD/0874/P" required>
             </div>
 
             <div class="form-group">
                 <label for="course">Academic Program / Course</label>
-                <input type="text" id="course" placeholder="BSc. Information of Technology" required>
+                <select id="course" required>
+                    <option value="">Select Your Course</option>
+                    <option value="BIT">Bachelor of Information Technology (BIT)</option>
+                    <option value="BCS">Bachelor of Computer Science (BCS)</option>
+                    <option value="BSE">Bachelor of Software Engineering (BSE)</option>
+                    <option value="BICT">BSc. Information and Communications Technology (BICT)</option>
+                    <option value="BCE">Bachelor of Computer Engineering (BCE)</option>
+                    <option value="BEB">Bachelor of E-Business (BEB)</option>
+                </select>
             </div>
 
             <div class="form-group">
@@ -38,19 +51,18 @@
                     <option value="2">Year Two</option>
                     <option value="3">Year Three</option>
                     <option value="4">Year Four</option>
-                    <option value="5">Year Five</option>
                 </select>
             </div>
 
             <div class="form-group">
-                <label for="hostelPref">Preferred Hostel</label>
+                <label for="hostelPref">Preferred Hostel (Kihumuro Surroundings)</label>
                 <select id="hostelPref" required>
                     <option value="">Select Hostel Preference</option>
-                    <option value="Kihumuro">Kihumuro Hostel (Ladies Flat Main Campus)</option>
-                    <option value="Kihumuro">Kihumuro Hostel (Gents Flat Main Campus)</option>
-                    <option value="Maama Brenda Hostels">Mile Four (Maama Brenda Hostel</option>
-                    <option value="Mirrors Hostel">Mile Three (Mirrors Hostel</option>
-                    <option value="Path Hostels">Mile Four Path Hostel</option>
+                    <option value="Kihumuro Gents">Kihumuro Hostel (Gents Flat - Main Campus)</option>
+                    <option value="Kihumuro Ladies">Kihumuro Hostel (Ladies Flat - Main Campus)</option>
+                    <option value="Maama Brenda">Mile Four - Maama Brenda Hostel</option>
+                    <option value="Mirrors Hostel">Mile Three - Mirrors Hostel</option>
+                    <option value="Path Hostels">Mile Four - Path Hostel</option>
                 </select>
             </div>
 
