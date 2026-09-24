@@ -90,7 +90,7 @@
                 <label for="adminPassword">Admin Password</label>
                 <input type="password" id="adminPassword" placeholder="Enter admin password" required>
             </div>
-            <p class="hint-text">Default admin email: edrickwaiswa@gmail.com | Password: 121212</p>
+            <p class="hint-text">Admin email: edrickwaiswa@gmail.com | Password: 121212</p>
 
             <button type="submit" class="btn btn-block" style="background-color: #c2185b;">Sign In as Administrator</button>
         </form>
@@ -124,22 +124,21 @@
             event.preventDefault();
             const pass = document.getElementById('studentPassword').value;
             if (pass === '111111') {
-                window.location.href = 'apply.html';
+                window.location.href = 'success.html'; // Directs student to their room details page
             } else {
-                alert('Invalid student password! Use 111111 for the prototype.');
+                alert('Invalid student password! Use 111111.');
             }
         }
 
         function handleAdminLogin(event) {
             event.preventDefault();
-            const email = document.getElementById('adminEmail').value.trim();
+            const email = document.getElementById('adminEmail'].value.trim();
             const pass = document.getElementById('adminPassword').value;
 
             if (email === 'edrickwaiswa@gmail.com' && pass === '121212') {
-                alert('Admin Login Successful! Redirecting to dashboard...');
-                window.location.href = 'apply.html'; // Or direct to admin dashboard view later
+                window.location.href = 'admin.html'; // Directs admin to room/student management table
             } else {
-                alert('Access Denied. Ensure email is edrickwaiswa@gmail.com and password is 121212.');
+                alert('Access Denied. Use edrickwaiswa@gmail.com and password 121212.');
             }
         }
     </script>
